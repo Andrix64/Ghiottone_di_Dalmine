@@ -1,0 +1,235 @@
+ /*--------------------
+App
+--------------------*/
+.search-form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 40px;
+    border-radius: 40px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translate(-50%, -50%);
+    background: #000000;
+    transition: all 0.3s ease;
+}
+
+.search-input {
+    position: absolute;
+    top: 10px;
+    left: 38px;
+    font-size: 14px;
+    background: none;
+    color: #5a6674;
+    width: 300px;
+    height: 20px;
+    border: none;
+    appearance: none;
+    outline: none;
+}
+
+.search-button {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 20px;
+    width: 20px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none!important;
+    cursor: pointer;
+
+}
+
+input[type="search"]::-webkit-search-cancel-button{
+    position:relative;
+    right:-7px;  
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    border-radius:10px;
+    background: url(IMG/x.svg);
+    filter: invert(100%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@font-face {
+    font-family: Segoe;
+    src: url(FONT/segoesc.ttf);
+}
+
+body {
+    background-color: #c58c38;
+    text-align: center;
+}
+
+.centraimg {
+    width: 100%;
+    max-width: 700px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.centered {
+    white-space: nowrap;
+    font-family:'Segoe';
+    font-size: min(7vw, 60px); 
+    font-weight: italic bold; 
+    position: absolute;
+    top: 48%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.nome{
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Lobster', cursive;
+    font-size: min(3.5vw, 25px); 
+    position: absolute;
+    max-width: 20%;
+    top: 48%;
+    left: 6%;
+    transform: translate(0%, -50%);
+}
+
+.ingredienti{
+    text-align: left;
+    font-family: 'Balsamiq Sans', bold;
+    font-size: min(2.7vw, 21px); 
+    position: absolute;
+    max-width: 59%;
+    top: 50%;
+    left: 27%;
+    transform: translate(0%, -55%);
+    text-transform:capitalize;
+}
+
+.prezzo{
+    white-space: nowrap;
+    font-family: 'Pacifico', cursive;
+    font-size: min(4vw, 25px); 
+    position: absolute;
+    top: 50%;
+    left: 87%;
+    transform: translate(0%, -65%);
+}
+
+
+.centeredsvg {
+    height: min(8vw, 70px);
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transform-origin: center center;
+}
+
+.freccia {
+    width:100%;
+    cursor: pointer;
+}
+
+.sfondino {
+    position: absolute;
+    top:0px;
+    height:100%;
+    width:100%;
+    max-width: 1050px;
+    opacity:10%
+}
+
+.rotate {
+    -webkit-transform: translate(-50%, -50%) rotate(90deg);
+    -moz-transform: translate(-50%, -50%) rotate(90deg);
+    -o-transform: translate(-50%, -50%) rotate(90deg);
+    -ms-transform: translate(-50%, -50%) rotate(90deg);
+    transform: translate(-50%, -50%) rotate(90deg);
+    transition-duration:0.5s;
+}
+.return {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    -moz-transform: translate(-50%, -50%) rotate(0deg);
+    -o-transform: translate(-50%, -50%) rotate(0deg);
+    -ms-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+    transition-duration:0.5s;
+}
+
+.notizia{
+    white-space: nowrap;
+    font-family:'Segoe';
+    font-size: min(4vw, 25px); 
+    font-weight: bold; 
+    line-height: min(4vw, 25px); 
+}
+
+
+.rainbow-text {
+
+    /* Font options */
+    text-shadow: 2px 2px 4px #000000;
+    /* Chrome, Safari, Opera */
+    -webkit-animation: rainbow 10s infinite; 
+
+    /* Internet Explorer */
+    -ms-animation: rainbow 10s infinite;
+
+    /* Standar Syntax */
+    animation: rainbow 10s infinite; 
+    }
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: rgb(115, 128, 0);}	
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+    }
+
+    /* Internet Explorer */
+    @-ms-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: rgb(115, 128, 0);}	
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+    }
+
+    /* Standar Syntax */
+    @keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: rgb(115, 128, 0);}	
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+}

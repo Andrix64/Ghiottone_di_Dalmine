@@ -1,0 +1,35 @@
+@font-face {
+    font-family: Segoe;
+    src: url(../FONT/segoesc.ttf);
+}
+
+body {
+    background-color: #f5f5f5;
+    padding-top: 19px;
+}
+
+tr{
+    cursor: pointer;
+}
+
+td{
+    text-transform:capitalize;
+}
+
+.pagina {
+    width: 100%;
+    max-width: 1000px;
+    padding: 15px;
+    margin: auto;
+}
+
+.ricerca {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    margin: auto;
+}
+
+.nocapo{
+    white-space: nowrap;
+}
